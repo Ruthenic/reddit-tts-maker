@@ -23,7 +23,7 @@ def tts(speak, n, post):
     print(text)
     draw.text((10, 25), text, font=font)
     image.save(f'out/{n}.jpg')
-posts = snatch.getRedditPosts('askreddit', postid="nliaz8")
+posts = snatch.getRedditPosts('askreddit')
 print(posts)
 n=0
 tts(posts[0] + ".; ", n, {'User': "", 'Content': posts[0]})
